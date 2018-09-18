@@ -1,0 +1,10 @@
+D:\Bulut\Workspace\CSharp\Tests\CSharpDersleri\BasicLoginForm\BasicLoginForm\bin\Debug\BasicLoginForm.exe
+D:\Bulut\Workspace\CSharp\Tests\CSharpDersleri\BasicLoginForm\BasicLoginForm\bin\Debug\BasicLoginForm.pdb
+D:\Bulut\Workspace\CSharp\Tests\CSharpDersleri\BasicLoginForm\BasicLoginForm\obj\Debug\BasicLoginForm.csprojAssemblyReference.cache
+D:\Bulut\Workspace\CSharp\Tests\CSharpDersleri\BasicLoginForm\BasicLoginForm\obj\Debug\BasicLoginForm.frmLogin.resources
+D:\Bulut\Workspace\CSharp\Tests\CSharpDersleri\BasicLoginForm\BasicLoginForm\obj\Debug\BasicLoginForm.frmMain.resources
+D:\Bulut\Workspace\CSharp\Tests\CSharpDersleri\BasicLoginForm\BasicLoginForm\obj\Debug\BasicLoginForm.Properties.Resources.resources
+D:\Bulut\Workspace\CSharp\Tests\CSharpDersleri\BasicLoginForm\BasicLoginForm\obj\Debug\BasicLoginForm.csproj.GenerateResource.cache
+D:\Bulut\Workspace\CSharp\Tests\CSharpDersleri\BasicLoginForm\BasicLoginForm\obj\Debug\BasicLoginForm.csproj.CoreCompileInputs.cache
+D:\Bulut\Workspace\CSharp\Tests\CSharpDersleri\BasicLoginForm\BasicLoginForm\obj\Debug\BasicLoginForm.exe
+D:\Bulut\Workspace\CSharp\Tests\CSharpDersleri\BasicLoginForm\BasicLoginForm\obj\Debug\BasicLoginForm.pdb
