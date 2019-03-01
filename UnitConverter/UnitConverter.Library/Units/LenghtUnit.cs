@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace UnitConverter.Library
 {
@@ -16,7 +18,7 @@ namespace UnitConverter.Library
 
         public IUnit To<TEnum>(TEnum type) where TEnum : struct, IConvertible, IComparable, IFormattable
         {
-            if (!typeof(TEnum).IsEnum && typeof(TEnum).GetEnumName(type) != "LengthUnitType")
+            if (!typeof(TEnum).IsEnum || type.GetType().Name != "LengthUnitType")
                 throw new ArgumentException("Hatalı ölçü birimi seçildi.");
 
             Enum.TryParse(type.ToString(), out LengthUnitType tempType);
@@ -86,16 +88,27 @@ namespace UnitConverter.Library
             return $"{Value} {_type.GetShortDescription()}";
         }
 
-        public string ToValueOnly(string format = null)
+        public string ToStringValueOnly(string format = null)
         {
             return Value.ToString(format);
         }
 
-        public string ToValueWithShortDesc(string format = null) => $"{Value.ToString(format)} {_type.GetShortDescription()}";
+        public string ToStringValueWithShortDesc(string format = null) => $"{Value.ToString(format)} {_type.GetShortDescription()}";
 
-        public string ToValueWithLongDesc(string format = null)
+        public string ToStringValueWithLongDesc(string format = null)
         {
             return $"{Value.ToString(format)} {_type.GetLongDescription()}";
+        }
+
+        public List<UnitType> GetUnitTypes()
+        {
+            return Enum.GetValues(typeof(LengthUnitType)).Cast<LengthUnitType>().Select(s => new UnitType()
+            {
+                EnumType = s.GetType(),
+                EnumName = s.ToString(),
+                ShortDescription = s.GetShortDescription(),
+                LongDescription = s.GetLongDescription()
+            }).ToList();
         }
     }
 }

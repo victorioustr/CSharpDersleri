@@ -45,6 +45,7 @@
     <Compile Include="Enums\LengthUnitType.cs" />
     <Compile Include="Enums\MassUnitType.cs" />
     <Compile Include="Interfaces\IUnit.cs" />
+    <Compile Include="Interfaces\UnitType.cs" />
     <Compile Include="Units\LenghtUnit.cs" />
     <Compile Include="Units\MassUnit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

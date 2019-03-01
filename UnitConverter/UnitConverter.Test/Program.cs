@@ -11,7 +11,7 @@ namespace UnitConverter.Test
             MassUnit b = new MassUnit(20, MassUnitType.Kilogram);
             MassUnit c = a + b;
             Console.WriteLine(c.To(MassUnitType.Dekagram));
-            Console.WriteLine(c.To(MassUnitType.Karat).ToValueWithShortDesc("0.000"));
+            Console.WriteLine(c.To(MassUnitType.Karat).ToStringValueWithShortDesc("0.000"));
             Console.WriteLine(c.To(MassUnitType.Kilopound));
             Console.WriteLine(c.To(MassUnitType.Ons));
             Console.WriteLine(c.To(MassUnitType.Ton));
@@ -24,6 +24,11 @@ namespace UnitConverter.Test
             Console.WriteLine(lc.To(LengthUnitType.Mil));
             Console.WriteLine(lc.To(LengthUnitType.Inc));
             Console.WriteLine(lc.To(LengthUnitType.DenizMili));
+
+            foreach (UnitType item in c.GetUnitTypes())
+            {
+                Console.WriteLine($"{item.EnumType} {item.EnumName} {item.ShortDescription} {item.LongDescription}");
+            }
             Console.ReadLine();
         }
     }

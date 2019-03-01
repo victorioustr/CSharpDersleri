@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace UnitConverter.Library
 {
@@ -6,8 +7,9 @@ namespace UnitConverter.Library
     {
         double Value { get; set; }
         IUnit To<TEnum>(TEnum type) where TEnum : struct, IConvertible, IComparable, IFormattable;
-        string ToValueOnly(string format = null);
-        string ToValueWithShortDesc(string format = null);
-        string ToValueWithLongDesc(string format = null);
+        string ToStringValueOnly(string format = null);
+        string ToStringValueWithShortDesc(string format = null);
+        string ToStringValueWithLongDesc(string format = null);
+        List<UnitType> GetUnitTypes();
     }
 }
